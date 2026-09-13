@@ -1,0 +1,135 @@
+/* Polished sections. The original #hero and #join styles stay in index.html. */
+nav { gap: 1.5rem; background: rgba(6,15,30,0.95); backdrop-filter: blur(18px); border-bottom-color: rgba(135,199,226,0.18); }
+.nav-links { align-items: center; gap: 1.4rem; }
+.nav-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.875rem; letter-spacing: 0; text-transform: none; }
+.nav-links .nav-donate { color: var(--navy); background: var(--cyan); padding: 0.35rem 1rem; border-radius: 8px; }
+.nav-links .nav-donate:hover { background: #75e1ff; }
+:is(#about, #mission, #competition, #donate, #contact) {
+  --slate: #b1c9d6;
+  --border: rgba(135,199,226,0.18);
+  --surface: linear-gradient(145deg, #102339, #0a1729);
+  padding: clamp(4rem, 7vw, 6.5rem) 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+:is(#about, #mission, #competition, #donate, #contact) .section-title { font-size: clamp(2rem, 3.8vw, 3.2rem); line-height: 1.15; letter-spacing: -0.025em; text-wrap: balance; }
+:is(#about, #mission, #competition, #donate, #contact) .section-label { letter-spacing: 2px; line-height: 1.6; }
+:is(#about, #mission, #competition, #donate, #contact) .divider { width: 52px; height: 3px; border-radius: 3px; margin-bottom: 1.75rem; }
+:is(#competition, #donate, #contact) :is(.btn-primary, .btn-outline) { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 48px; padding: 0.8rem 1.3rem; border-radius: 9px; font-size: 0.9375rem; line-height: 1.5; text-transform: none; letter-spacing: 0; }
+:is(#competition, #donate, #contact) .btn-outline { color: var(--white); border-color: rgba(135,199,226,0.35); background: rgba(15,34,53,0.5); }
+:is(#competition, #donate, #contact) .btn-primary { box-shadow: 0 4px 24px rgba(0,200,255,0.12); }
+:is(#competition, #donate, #contact) .btn-primary:hover { background: #75e1ff; }
+#about, #competition { border-block: 1px solid var(--border); }
+.about-grid, .comp-inner { grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); gap: clamp(2rem,6vw,5rem); }
+.about-stats { gap: 1rem; grid-template-columns: repeat(2,minmax(0,1fr)); }
+.stat-card { padding: clamp(1rem,3vw,2rem); border-color: var(--border); border-radius: 14px; background: var(--surface); }
+.stat-number { font-size: clamp(2rem,4vw,3rem); margin-bottom: 0.75rem; }
+.stat-label { text-transform: none; letter-spacing: 0; }
+.mentors-heading { margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--border); }
+.mentors-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.25rem; max-width: 1100px; margin: 2rem auto 0; }
+.mentor-bar { display: flex; flex-direction: column; align-items: flex-start; gap: 1.25rem; padding: 1.75rem; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); }
+.mentor-bar > div.mentor-copy { flex: 1; flex-basis: auto !important; min-width: 0; }
+.mentor-portrait { box-shadow: 0 0 0 6px rgba(0,200,255,0.05); }
+.mentor-initials { display: grid; place-items: center; font: 700 1.75rem 'Playfair Display',serif; color: var(--cyan); }
+.mentor-label { color: var(--cyan); font-size: 0.875rem; margin-bottom: 0.3rem; }
+.mentor-copy h3 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.8rem; }
+.mentor-bio { color: var(--muted); line-height: 1.75; }
+.mentor-link { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px; color: var(--slate); text-decoration: none; border-top: 1px solid var(--border); width: 100%; padding-top: 1rem; font-size: 0.9375rem; }
+.mentor-link:hover { color: var(--cyan); }
+.tasks-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1rem; margin-top: 2.5rem; }
+.task-card { border: 1px solid var(--border); border-radius: 14px; background: var(--surface); padding: 1.5rem; }
+.task-num { color: var(--cyan); opacity: 0.8; margin-bottom: 1.5rem; }
+.task-name { font-size: 1.1rem; line-height: 1.4; margin-bottom: 0.75rem; }
+.timeline { border: 1px solid var(--border); border-radius: 16px; padding: 2rem; background: var(--navy); }
+.timeline > br { display: none; }
+.timeline > .section-label { margin-bottom: 2rem; }
+.tl-item { gap: 1.25rem; padding-bottom: 1.75rem; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item:not(:last-child)::before { top: 22px; left: 10px; background: var(--border); }
+.tl-dot { width: 21px; height: 21px; margin-top: 4px; border-width: 1px; }
+.tl-dot-inner { width: 5px; height: 5px; }
+.tl-period { font-size: 0.875rem; letter-spacing: 0; text-transform: none; }
+.tl-event { font-size: 1.1rem; margin: 0.25rem 0; }
+.tl-detail { font-size: 0.9375rem; }
+#donate { padding-top: 1rem; }
+.donate-panel { grid-template-columns: minmax(0,1.35fr) minmax(0,1fr); padding: clamp(1.5rem,5vw,3.5rem); border: 1px solid rgba(0,200,255,0.35); border-radius: 22px; }
+.donate-action { border-color: var(--border); border-radius: 14px; }
+.donate-action .btn-primary { width: 100%; }
+.sponsor-support { margin-top: 0; padding-top: 3rem; }
+.sponsor-support h3 { font-weight: 500; }
+.sponsor-needs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.sponsor-needs li { border: none; background: none; }
+.sponsor-email a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 100%; padding: 1.25rem 1.5rem; border: 1px solid var(--border); border-radius: 12px; background: var(--deep); color: var(--white); font-weight: 500; text-decoration: none; }
+.sponsor-email a span { color: var(--cyan); }
+.sponsor-email a:hover { background: var(--mid); border-color: var(--cyan); }
+#sponsor-review { font-size: 0.9375rem; }
+#contact { border-top: 1px solid var(--border); background: radial-gradient(ellipse at top,rgba(0,200,255,0.08),transparent 70%),var(--deep); }
+.contact-inner { max-width: 720px; }
+.contact-links { gap: 0.75rem; }
+.contact-chip { min-height: 44px; padding: 0.65rem 1rem; font-size: 0.875rem; border-color: var(--border); border-radius: 8px; overflow-wrap: anywhere; }
+footer { flex-wrap: wrap; gap: 1rem; }
+/* Team page polish, separate from the homepage title section. */
+.team-page header { position: sticky; top: 0; z-index: 100; background: var(--navy); }
+.team-page nav { position: static; padding: 1.1rem 1.5rem; border-bottom: 0; }
+.team-page main { padding-top: clamp(3rem,7vw,6rem); }
+.team-page h1 { font-size: clamp(2.6rem,6vw,5rem); line-height: 1.1; letter-spacing: -0.035em; }
+.team-page .team-photo { min-height: 320px; justify-items: center; border: 1px solid rgba(135,199,226,0.18); border-radius: 20px; background: radial-gradient(ellipse at center,rgba(0,200,255,0.09),transparent 75%),var(--deep); }
+.photo-placeholder-icon { width: 64px; height: 64px; color: var(--cyan); margin-bottom: 1.5rem; }
+.team-page .team-photo h2 { font-size: 2rem; }
+.team-page .members { padding: 2.5rem 0; border-top: 1px solid rgba(135,199,226,0.18); }
+.team-page .back-link { border-color: rgba(135,199,226,0.35); border-radius: 9px; color: var(--white); background: rgba(15,34,53,0.5); }
+.team-page footer { justify-content: center; }
+@media (max-width: 1000px) {
+  nav { flex-wrap: wrap; gap: 0.5rem; }
+  .nav-links { display: flex; width: 100%; gap: 1.3rem; overflow-x: auto; padding-block: 0.25rem; }
+  .nav-links li { flex-shrink: 0; }
+  .tasks-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .mentors-grid { grid-template-columns: 1fr; }
+  .mentor-bar { display: grid; grid-template-columns: 88px minmax(0,1fr); gap: 1.25rem 1.75rem; }
+  .mentor-link { grid-column: 2; }
+}
+@media (max-width: 700px) {
+  :is(#about,#mission,#competition,#donate,#contact) { padding: 3.5rem 1.25rem; }
+  .about-grid, .comp-inner, .donate-panel { grid-template-columns: 1fr; gap: 2rem; }
+  .timeline, .donate-action { padding: 1.5rem; }
+  .sponsor-needs { grid-template-columns: 1fr; }
+  footer { flex-direction: column; text-align: center; }
+}
+@media (max-width: 430px) {
+  .tasks-grid { grid-template-columns: 1fr; }
+  .mentor-bar { display: flex; padding: 1.5rem; }
+  .contact-chip { max-width: 100%; font-size: 0.8125rem; padding-inline: 0.75rem; }
+}
+
+.mentor-portrait .kedar-portrait { object-position: 45% 40%; transform: scale(1.4); transform-origin: 45% 45%; }
+
+/* Warm accents echo the circuitry in the manta-ray artwork. */
+:root { --orange: #f5aa76; --orange-hover: #ffc69f; }
+.nav-links .nav-donate,
+#hero .btn-primary,
+#donate .btn-primary { background: var(--orange); color: var(--navy); }
+.nav-links .nav-donate:hover,
+#hero .btn-primary:hover,
+#donate .btn-primary:hover { background: var(--orange-hover); }
+#hero .btn-about { background: var(--cyan); border-color: var(--cyan); color: var(--navy); }
+#hero .btn-about:hover { background: var(--cyan2); border-color: var(--cyan2); }
+#donate .btn-primary { box-shadow: 0 4px 24px rgba(245,170,118,0.15); }
+#donate .section-label,
+#mission .task-num,
+#competition .tl-period,
+.sponsor-email a span { color: var(--orange); }
+#mission .task-num { opacity: 1; }
+#competition .divider,
+#competition .tl-dot-inner { background: var(--orange); }
+#competition .tl-dot { border-color: var(--orange); }
+.donate-panel { border-color: rgba(245,170,118,0.4); background: radial-gradient(ellipse at top right,rgba(245,170,118,0.13),transparent 65%),var(--deep); }
+.sponsor-email a:hover { border-color: var(--orange); background: rgba(245,170,118,0.07); }
+.team-page .photo-placeholder-icon { color: var(--orange); }
+
+/* Enlarge the artwork without changing the original title or button layout. */
+@media (min-width: 1101px) {
+  .hero-rov { width: clamp(440px,40vw,580px); right: 2%; height: auto; }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  .hero-rov { width: 370px; right: 0; height: auto; }
+}
