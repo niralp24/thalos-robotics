@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the students behind Thalos Robotics, a community-based underwater robotics team in Silicon Valley.">
+  <title>About the Team | Thalos Robotics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root { --navy: #060f1e; --deep: #0a1628; --cyan: #00c8ff; --slate: #a8ccd8; --white: #f0f8ff; }
+    body { margin: 0; background: var(--navy); color: var(--white); font-family: 'DM Sans', sans-serif; line-height: 1.7; }
+    a { color: var(--cyan); text-underline-offset: 5px; }
+    a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
+    header { border-bottom: 1px solid rgba(0,200,255,0.15); }
+    nav { max-width: 1200px; margin: auto; padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; color: var(--white); text-decoration: none; font: 700 1.3rem 'Playfair Display', serif; }
+    .brand span { color: var(--cyan); }
+    .brand img { width: 32px; height: 32px; object-fit: contain; }
+    main { max-width: 1100px; margin: auto; padding: clamp(3rem, 8vw, 6rem) 1.5rem; }
+    .label { color: var(--cyan); font-size: 0.875rem; letter-spacing: 3px; text-transform: uppercase; }
+    h1, h2 { font-family: 'Playfair Display', serif; line-height: 1.15; }
+    h1 { font-size: clamp(2.75rem, 7vw, 5rem); margin: 1rem 0 1.5rem; }
+    h1 span { color: var(--cyan); }
+    .intro { max-width: 680px; color: var(--slate); font-size: 1.125rem; }
+    .team-photo { min-height: 260px; margin: 3rem 0; padding: 3rem 1.5rem; display: grid; place-content: center; text-align: center; border: 1px dashed rgba(0,200,255,0.4); background: radial-gradient(ellipse at top right, rgba(0,200,255,0.12), transparent 70%), var(--deep); }
+    .team-photo h2 { font-size: 1.75rem; margin: 0 0 0.75rem; }
+    .team-photo p { margin: 0; color: var(--slate); }
+    .members { border-top: 2px solid var(--cyan); padding-top: 2rem; }
+    .members h2 { font-size: 2rem; margin: 0 0 1rem; }
+    .members p { color: var(--slate); }
+    .back-link { display: inline-block; margin-top: 2rem; padding: 0.75rem 1.5rem; border: 1px solid var(--cyan); text-decoration: none; }
+    .back-link:hover { background: rgba(0,200,255,0.1); }
+    footer { border-top: 1px solid rgba(0,200,255,0.15); padding: 2rem 1.5rem; text-align: center; color: var(--slate); font-size: 0.875rem; }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="team-page">
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="brand"><img src="Logo.png" alt="" width="32" height="32">Thalos <span>Robotics</span></a>
+      <a href="index.html">Back to Home</a>
+    </nav>
+  </header>
+  <main>
+    <p class="label">About the Team</p>
+    <h1>The people behind<br><span>Thalos Robotics.</span></h1>
+    <p class="intro">We're a community-based underwater robotics team bringing together high school students from across Silicon Valley to design, build, and test ROVs.</p>
+
+    <!-- Replace this placeholder with the team photo when provided. -->
+    <section class="team-photo" aria-labelledby="photo-title">
+      <svg class="photo-placeholder-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true"><rect x="6" y="12" width="52" height="40" rx="8" stroke="currentColor" stroke-width="2"/><circle cx="23" cy="26" r="5" stroke="currentColor" stroke-width="2"/><path d="m10 46 14-12 10 8 9-10 11 14" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <h2 id="photo-title">Team photos coming soon</h2>
+      <p>A look at our team and the work we're doing together.</p>
+    </section>
+
+    <!-- Add member photos, names, roles, and biographies here when provided. -->
+    <section class="members" aria-labelledby="members-title">
+      <h2 id="members-title">Meet our team</h2>
+      <p>Member profiles and photos are on the way. Check back to meet our founding team.</p>
+    </section>
+    <a class="back-link" href="index.html">Back to Thalos Robotics</a>
+  </main>
+  <footer>© 2026 Thalos Robotics. All rights reserved.</footer>
+</body>
+</html>
